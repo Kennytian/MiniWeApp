@@ -1,11 +1,50 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/product/index",
+    "pages/message/index",
+    "pages/my/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "最简微信小程序",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTitleText": "简易微信小程序",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#B4BEC6",
+    "selectedColor": "#1589EE",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "assets/images/homepage.png",
+      "selectedIconPath": "assets/images/homepageHL.png",
+      "text": "主页"
+    }, {
+      "pagePath": "pages/product/index",
+      "iconPath": "assets/images/project.png",
+      "selectedIconPath": "assets/images/projectHL.png",
+      "text": "产品"
+    }, {
+      "pagePath": "pages/message/index",
+      "iconPath": "assets/images/message.png",
+      "selectedIconPath": "assets/images/messageHL.png",
+      "text": "消息",
+      "bagde": 3
+    }, {
+      "pagePath": "pages/my/index",
+      "iconPath": "assets/images/my.png",
+      "selectedIconPath": "assets/images/myHL.png",
+      "text": "我的"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
