@@ -11,8 +11,12 @@
     </view>
 
     <view>
-        <navigator class="text-label" url="../product/index?title=我是navigate" >用新窗口打开产品</navigator>
-        <navigator class="text-label" url="../message/index?title=我是redirect" redirect>直接打开消息页面</navigator>
+        <navigator class="text-label" url="../product/index?title=我是navigate"  hover-class="navigator-hover">
+            <button type="default">用新窗口打开产品</button>
+        </navigator>
+        <navigator class="text-label" url="../message/index?title=我是redirect" redirect hover-class="navigator-hover">
+            <button type="default">直接打开消息页面</button>
+        </navigator>
     </view>
 
 </view>
