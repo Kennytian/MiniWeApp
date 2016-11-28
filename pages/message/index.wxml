@@ -1,13 +1,12 @@
 <!--index.wxml-->
 <view class="container">
-  <text class="text-label">标题参数：{{title}}</text>
-  <text class="text-label" id="tapTest" data-hi="下午好" bindtap="tapName">{{eventDemo1}}</text>
+    <text class="text-label">标题参数：{{title}}</text>
 
-    <view id="middle" catchtap="handleTap2" class="text-label">
-      middle view
-      <view id="inner" bindtap="handleTap3">
-        inner view
-      </view>
-  </view>
-
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+        <block wx:for="{{products}}" wx:for-index="index">
+            <swiper-item>
+                <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+            </swiper-item>
+        </block>
+    </swiper>
 </view>
