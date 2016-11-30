@@ -9,4 +9,9 @@
             </swiper-item>
         </block>
     </swiper>
+
+    <!--图片宽大于屏幕宽-->
+    <image key="img1" style="{{firstWH}}" src="{{firstSrc}}" bindload="imageLoad1" />
+    <image key="img2" style="{{secondWH}}" src="{{secondSrc}}" bindload="imageLoad2"  />
+    <image key="img3" style="{{thirdWH}}" src="{{thirdSrc}}" bindload="imageLoad3"  />
 </view>
