@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/product/index",
     "pages/message/index",
-    "pages/my/index"
+    "pages/my/index",
+    "pages/others/index",
+    "pages/others/drag/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

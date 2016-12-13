@@ -20,6 +20,10 @@ Page({
       lines.push("map2.get('b');");
       lines.push(map2.get('b'));
 
+      let seq = Immutable.Range(0,10);
+      let zipped = seq.zip(seq.filter(n=>n%2===0));
+      lines.push(zipped);
+
       lines.push("\nUUID.v1()");
       lines.push(uuid.v1());
       lines.push("UUID.v4()");
